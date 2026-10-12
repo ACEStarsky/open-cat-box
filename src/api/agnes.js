@@ -1,9 +1,10 @@
 // api/agnes.js
-// Agnes AI 图像生成调用封装
-// 文档：https://agnes-ai.cn
+// Agnes AI 图像生成
+// API Key 从 localStorage 读取（设置页填写）
+
+import { getAgnesKey } from '../utils/settings';
 
 const AGNES_BASE = 'https://api.agnes-ai.cn/v1';
-const API_KEY = import.meta.env.VITE_AGNES_API_KEY;
 const MODEL = 'agnes-image-2.0-flash';
 
 /**
@@ -13,8 +14,9 @@ const MODEL = 'agnes-image-2.0-flash';
  * @returns {Promise<string>} 图片 URL
  */
 export async function generatePortrait(prompt, size = '1024x768') {
+  const API_KEY = getAgnesKey();
   if (!API_KEY) {
-    throw new Error('未配置 VITE_AGNES_API_KEY');
+    throw new Error('未配置 Agnes AI 的 API Key，请到设置页填写');
   }
 
   const res = await fetch(`${AGNES_BASE}/images/generations`, {
