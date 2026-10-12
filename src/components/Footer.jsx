@@ -1,11 +1,8 @@
-// components/Footer.jsx
-// 页脚：作者信息 + GitHub 源码仓库 + QQ 群
 
-const REPO_URL = 'https://github.com/your-name/ai-roleplay-app';
-const AUTHOR = 'Your Name';
-const AUTHOR_EMAIL = 'you@example.com';
-// 替换为你的 QQ 群加入链接（QQ 群设置里可生成）
-const QQ_GROUP_URL = 'https://qm.qq.com/q/your_group_link';
+const REPO_URL = 'https://github.com/ACEStarsky/open-cat-box';
+const AUTHOR = '神秘_星辰';
+const AUTHOR_EMAIL = 'https://space.bilibili.com/3546642745657929';
+const QQ_GROUP_URL = 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=zRivLC7_5XesFDLVSsL7mVeVlnaYx_TH&authKey=UFAXegUKVNY05SaIcjPu8R7H4ql7wFNVMHghFrFeSdz3RNofUzMNzFr7bkqwSJHC&noverify=0&group_code=1129804832';
 
 export default function Footer() {
   return (
@@ -14,8 +11,7 @@ export default function Footer() {
         <div className="footer-col">
           <h4>关于项目</h4>
           <p>
-            纯前端的 AI 角色扮演应用。模板与存档均以文件形式保存，
-            不依赖任何后端服务。
+            卡特魔盒是一个纯前端的 AI 角色扮演应用。不依赖任何后端服务。
           </p>
         </div>
         <div className="footer-col">
@@ -35,7 +31,7 @@ export default function Footer() {
           <h4>作者</h4>
           <p>{AUTHOR}</p>
           <p>
-            <a href={`mailto:${AUTHOR_EMAIL}`}>{AUTHOR_EMAIL}</a>
+            <a href={`mailto:${AUTHOR_EMAIL}`}>B 站主页</a>
           </p>
         </div>
       </div>
