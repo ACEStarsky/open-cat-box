@@ -4,7 +4,7 @@
 
 import { getAgnesKey } from '../utils/settings';
 
-const AGNES_BASE = 'https://api.agnes-ai.com/v1';
+const AGNES_BASE = '/api/agnes';
 const MODEL = 'agnes-image-2.0-flash';
 
 /**
