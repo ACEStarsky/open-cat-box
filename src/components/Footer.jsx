@@ -31,7 +31,7 @@ export default function Footer() {
           <h4>作者</h4>
           <p>{AUTHOR}</p>
           <p>
-            <a href={`mailto:${AUTHOR_EMAIL}`}>B 站主页</a>
+            <a href={`${AUTHOR_EMAIL}`}>B 站主页</a>
           </p>
         </div>
       </div>
