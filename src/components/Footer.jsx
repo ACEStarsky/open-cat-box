@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="footer-col">
           <h4>关于项目</h4>
           <p>
-            卡特魔盒是一个纯前端的 AI 角色扮演应用。不依赖任何后端服务。
+            正如其名，卡特魔盒（OpenCatBox）对标字节跳动旗下的猫箱，是一个纯前端的 AI 角色扮演应用。不依赖任何后端服务。
           </p>
         </div>
         <div className="footer-col">
